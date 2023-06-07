@@ -5,11 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style.css" />
+    
 
-    <title>BFB</title>
+    <title>Formulário</title>
 </head>
 <body>
-    <h1>olá Mundo!</h1>
+    <main class="l-main">
+        <h1 class="l-main--title">
+            Formulário de Experiência em nosso Site
+        </h1>
+        <p class="l-main--text">
+            Obrigado, você está nos ajudando muito dando sua opnião.
+        </p>
+
+        <article class="l-container">
+            <form action="" method="post" autocomplete="on" class="l-form">
+
+                <div class="l-form c-form c-form--nome">
+                    <label for="iname">Nome: </label>
+                    <input type="text" name="name" id="iname" maxlength="30">
+                </div>
+
+                <div class="l-form c-form c-form--email">
+                    <label for="iemail">Email: </label>
+                    <input type="email" name="email" id="iemail" autocomplete="on" >
+                </div>
+
+                <div class="l-form c-form c-form--nascimento">
+                    <label for="inascimento">Data de nascimento: </label>
+                    <input type="date" name="nascimento" id="inascimento" >
+                </div>
+
+                <div class="l-form c-form c-form--escolaridade">
+                    <label for="iescolaridade">Escolaridade</label>
+                    <select name="escolaridade" id="iescolaridade">
+                        <option value="" disabled selected hidden>Escolha das opções</option>
+                        <option value="Incompleto">Incompleto</option>
+                        <option value="Cursando">Cursando</option>
+                        <option value="Formado">Formado</option>
+                       
+                    </select>
+                </div>
+
+                <div class="l-form c-form c-form--linguagens">
+                    <p>Qual dessas linguagens você ja teve contato ?</p>
+
+                    <div>
+                        <input type="checkbox" name="hmtl" id="ihtml">
+                        <label for="ihtml">HTML</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="css" id="icss">
+                        <label for="icss">CSS</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="JS" id="ijs">
+                        <label for="ijs">JavaScript</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="Java" id="ijava">
+                        <label for="ijava">Java</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="python" id="ipython">
+                        <label for="ipython">Python</label>
+                    </div>
+                </div>
+
+                <div class="l-form c-form c-form--recomenda">
+                    <p>Você recomendaria alguma dessas linguagens a cima ?</p>
+                    <div><input type="radio" name="recomenda" id="sim"> Sim</div> 
+                    <div><input type="radio" name="recomenda" id="nao"> Não</div>
+                    <div><input type="radio" name="recomenda" id="talvez"> Talvez</div>
+                    <div><input type="radio" name="recomenda" id="nresponder"> Não quero responder</div>
+                </div>
+
+                <div class="l-form c-form c-form--opiniao">
+                    <label for="imsg">Nos diga oque você acha que podemos melhorar em nosso site.</label>
+                    <textarea name="msg" id="imsg" cols="80" rows="10">
+
+                    </textarea>
+                </div>
+
+                <div class="enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+
+
+            </form>
+        </article>
+    </main>
+    <footer>
+        by Rafael Caciano  @r4fa.caciano  https://www.esteaquinaoedeverdade.com.br
+    </footer>
 </body>
 </html>

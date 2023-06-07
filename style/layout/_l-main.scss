@@ -1,0 +1,16 @@
+$layout-name: 'l-main';
+
+.#{$layout-name} {
+    align-items: center;
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+
+
+    &--title{
+        margin-top: 20px;
+    }
+}

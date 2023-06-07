@@ -1,11 +1,17 @@
 @charset 'utf-8';
 
-@forward '01-settings';
-@forward '02-tools';
-@forward '03-generics';
-@forward '04-elements';
-@forward '05-objects';
-@forward '06-components';
-@forward '99-utilities';
+// base
+@import "./style/base/style.css";
 
 
+
+
+// layout
+@import "./style/layout/l-main";
+@import "./style/layout/l-container";
+@import "./style/layout/l-form";
+
+
+
+// module - Componentes
+@import "./style/module/c-form";

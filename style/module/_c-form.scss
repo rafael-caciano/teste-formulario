@@ -1,0 +1,62 @@
+$module-name: 'c-form';
+
+.#{$module-name} {
+    margin-bottom: 30px;
+    
+    >input{
+        border-radius: 5px;
+        padding: 8px 0px;
+    }
+
+    >select{
+        border-radius: 5px;
+        display: block;
+        padding: 8px 0px;
+        width: 100%;
+    }
+
+
+    &--nome{
+        & > input{
+            display: block;
+            width: 100%;
+
+        }
+    }
+    &--email{
+        & > input{
+            display: block;
+            width: 100%;
+
+        }
+    }
+    &--nascimento{
+        & > input{
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &--linguagens{
+        > div{
+            padding: 5px;
+        }  
+    }
+    &--recomenda{
+        > div{
+            padding: 5px;
+        }
+    }
+
+    &--opiniao{
+        & > textarea{
+            border-radius: 5px;
+            display: block;
+            height: 100px;
+            padding: 8px 5px;
+            width: calc(100% - 10px);
+
+        }
+    }
+
+}
