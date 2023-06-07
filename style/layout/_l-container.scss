@@ -9,5 +9,15 @@ $layout-name: 'l-container';
     padding: 1.5em;
     width: 45%;
 
+    transition: width 1s ease-out;
 
+
+}
+
+@media screen and (max-width:1000px) {
+    .#{$layout-name}{
+        width: 80%;
+
+        transition: width 1s ease-out;
+    }
 }

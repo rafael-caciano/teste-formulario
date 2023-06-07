@@ -9,6 +9,10 @@
 }
 .l-main--title {
   margin-top: 20px;
+  margin: 10px;
+}
+.l-main--text {
+  margin: 0px 10px;
 }
 
 .l-container {
@@ -18,8 +22,15 @@
   margin: 30px;
   padding: 1.5em;
   width: 45%;
+  transition: width 1s ease-out;
 }
 
+@media screen and (max-width: 1000px) {
+  .l-container {
+    width: 80%;
+    transition: width 1s ease-out;
+  }
+}
 .c-form {
   margin-bottom: 30px;
 }
